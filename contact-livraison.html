@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant - Contact & Livraison</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles pour la mise en page en deux colonnes */
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,13 +38,20 @@
 
     <section class="content">
         <h1>Contact & Livraison</h1>
-        <p>Pour toute question ou pour commander, contactez-nous aux informations ci-dessous :</p>
-        <ul>
-            <li>Téléphone : +123 456 7890</li>
-            <li>Email : contact@restaurant.com</li>
-            <li>Adresse : 123 Rue de la Cuisine, 75000 Paris, France</li>
-        </ul>
-        <p>Livraison disponible dans tout Paris.</p>
+        <div class="columns">
+            <div class="column">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Téléphone : +123 456 7890</li>
+                    <li>Email : contact@restaurant.com</li>
+                    <li>Adresse : 123 Rue de la Cuisine, 75000 Paris, France</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Livraison</h2>
+                <p>Livraison disponible dans tout Paris.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
