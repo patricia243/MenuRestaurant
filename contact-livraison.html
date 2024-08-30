@@ -6,28 +6,91 @@
     <title>Restaurant - Contact & Livraison</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Styles pour la mise en page en deux colonnes avec des blocs distincts */
-        .columns {
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
+            justify-content: space-around;
         }
 
-        .column {
-            flex: 1;
+        .menu li {
+            display: inline;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+            background-color: #eee;
+        }
+
+        /* Main Content */
+        .content {
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #f9f9f9;
         }
 
-        .column ul {
+        .content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Grid Layout for Contact & Livraison */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .grid-item h3 {
+            margin: 10px 0;
+        }
+
+        .grid-item p, .grid-item ul {
+            margin: 0;
             list-style-type: none;
             padding: 0;
         }
 
-        .column h2 {
-            margin-top: 0;
+        .grid-item ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -46,22 +109,10 @@
 
     <section class="content">
         <h1>Contact & Livraison</h1>
-        <div class="columns">
-            <!-- Bloc Contact -->
-            <div class="column">
-                <h2>Contact</h2>
-                <ul>
-                    <li>Téléphone : +123 456 7890</li>
-                    <li>Email : contact@restaurant.com</li>
-                    <li>Adresse : 123 Rue de la Cuisine, 75000 Paris, France</li>
-                </ul>
-            </div>
+        
+
+            <!-- Livraison Block -->
             
-            <!-- Bloc Livraison -->
-            <div class="column">
-                <h2>Livraison</h2>
-                <p>Livraison disponible dans tout Paris.</p>
-            </div>
         </div>
     </section>
 
