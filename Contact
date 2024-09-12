@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant - Livraison</title>
+    <title>Restaurant - Menu Nourriture</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,9 +18,3 @@
             </ul>
         </nav>
     </header>
-
-<footer>
-     <p>&copy; 2024 Restaurant. Tous droits réservés.</p>
-</footer>
-</body>
-</html>
