@@ -90,7 +90,7 @@ h1 {
 }
 
 .gallery-img {
-    width: 60%;
+    width: 50%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -134,6 +134,96 @@ h1 {
 .image-container:hover .overlay {
     opacity: 1; /* Affiche le texte au survol */
 }
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-image: url('Images/background.jpg'); /* Arrière-plan */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Informations de contact */
+.contact-info {
+    width: 45%;
+    background: rgba(255, 255, 255, 0.8); /* Fond transparent pour rendre le texte lisible */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info h1, .contact-info h2 {
+    color: #333;
+}
+
+.contact-info p {
+    line-height: 1.6;
+}
+
+/* Formulaire de contact */
+.contact-form {
+    width: 45%;
+    background: rgba(255, 255, 255, 0.8); /* Fond transparent pour le formulaire */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #faf9f9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff9800;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    color: #f50511;
+}
+
 
 
 
